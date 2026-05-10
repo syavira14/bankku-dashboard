@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Opsional: pastikan background body warnanya sesuai desain */
+body {
+  background-color: #F5F7FA;
+}
