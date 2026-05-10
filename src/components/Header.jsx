@@ -24,7 +24,7 @@ export default function Header({ title, onOpenSidebar }) {
         {/* Profile (Hanya muncul di pojok kanan saat Mobile - image_ecbe54) */}
         <div className="md:hidden">
           <img 
-            src="https://i.pravatar.cc/150?u=a042581f4e29026704d" 
+            src="https://i.pravatar.cc/150?img=47" 
             alt="Profile" 
             className="h-9 w-9 rounded-full object-cover"
           />

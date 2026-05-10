@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-// --- Komponen Toggle Switch (Saklar) ---
+// --- Komponen Toggle Switch (Saklar) - SUDAH DIPERBAIKI ---
 const Toggle = ({ label, enabled, onChange }) => (
   <div className="flex items-center gap-4 mb-5 last:mb-0">
     <button
       onClick={onChange}
-      className={`relative inline-flex h-7 w-12 items-center rounded-full transition-colors duration-200 focus:outline-none ${
+      className={`relative inline-flex h-7 w-12 flex-shrink-0 items-center rounded-full transition-colors duration-200 focus:outline-none ${
         enabled ? 'bg-[#16DBCC]' : 'bg-[#CBD5E1]'
       }`}
     >
@@ -15,7 +15,7 @@ const Toggle = ({ label, enabled, onChange }) => (
         }`}
       />
     </button>
-    <span className="text-[15px] text-[#718EBF]">{label}</span>
+    <span className="text-[15px] text-[#718EBF] leading-tight">{label}</span>
   </div>
 );
 
@@ -144,6 +144,7 @@ export default function Settings() {
                   enabled={notifMerchant} 
                   onChange={() => setNotifMerchant(!notifMerchant)} 
                 />
+                {/* Tombol ke-3 ini yang sebelumnya bermasalah, sekarang sudah aman */}
                 <Toggle 
                   label="There are recommendation my account" 
                   enabled={notifRecommend} 
